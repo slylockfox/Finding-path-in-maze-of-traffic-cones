@@ -321,4 +321,6 @@ camera.observe(update, names='value')  # this attaches the 'update' function to 
 # robot.stop()
 
 import time
-time.sleep(200)
+time.sleep(20)
+camera.unobserve(update, names='value')
+robot.stop()
