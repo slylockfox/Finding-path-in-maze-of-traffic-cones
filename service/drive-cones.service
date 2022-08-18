@@ -1,0 +1,11 @@
+[Unit]
+Description=continuously drive through cones
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/docker exec -i jetbot_jupyter sh ./Finding-path-in-maze-of-traffic-cones/traffic_cones_driving/drive-cones.sh
+WorkingDirectory=/home/jetbot
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
