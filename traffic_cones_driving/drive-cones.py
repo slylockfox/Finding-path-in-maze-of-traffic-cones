@@ -10,7 +10,7 @@ model.classifier[6] = torch.nn.Linear(model.classifier[6].in_features, 5)
 
 # Next, load the trained weights from the ``best_model.pth`` file that you uploaded
 
-model.load_state_dict(torch.load('best_model_cones_8.pth'))
+model.load_state_dict(torch.load('best_model_cones_9.pth'))
 
 # Currently, the model weights are located on the CPU memory execute the code below to transfer to the GPU device.
 
