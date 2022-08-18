@@ -54,9 +54,9 @@ def preprocess(camera_value):
 # import traitlets
 # from IPython.display import display
 # import ipywidgets.widgets as widgets
-# from jetbot import Camera, bgr8_to_jpeg
+from jetbot import Camera, bgr8_to_jpeg
 
-# camera = Camera.instance(width=224, height=224)
+camera = Camera.instance(width=224, height=224)
 # image = widgets.Image(format='jpeg', width=224, height=224)
 # camera_link = traitlets.dlink((camera, 'value'), (image, 'value'), transform=bgr8_to_jpeg)
 # display(widgets.HBox([image]))
@@ -319,3 +319,6 @@ camera.observe(update, names='value')  # this attaches the 'update' function to 
 
 # camera.unobserve(update, names='value')
 # robot.stop()
+
+import time
+time.sleep(200)
